@@ -28,7 +28,8 @@ function App() {
     <div className="App">
       <div className="overlay"></div>
       <div className="navBar">
-        <img src={logoImg} alt="Main Logo"></img>
+        <img role="banner" src={logoImg} alt="Main Logo"></img>
+
         <NavBar navBarToggle={navBarToggle} />
         <img
           className="navBtn"
