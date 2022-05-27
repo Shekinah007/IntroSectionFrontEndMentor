@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/IntroSectionFrontEndMentor/static/css/main.3217d544.css",
-    "main.js": "/IntroSectionFrontEndMentor/static/js/main.db357f5f.js",
+    "main.css": "/IntroSectionFrontEndMentor/static/css/main.3907eb13.css",
+    "main.js": "/IntroSectionFrontEndMentor/static/js/main.c8cae655.js",
     "static/js/787.28cb0dcd.chunk.js": "/IntroSectionFrontEndMentor/static/js/787.28cb0dcd.chunk.js",
     "static/media/image-hero-desktop.png": "/IntroSectionFrontEndMentor/static/media/image-hero-desktop.50cc22fddeb0c072b414.png",
     "static/media/image-hero-mobile.png": "/IntroSectionFrontEndMentor/static/media/image-hero-mobile.adefc8b1bbed2ca80470.png",
@@ -19,12 +19,12 @@
     "static/media/icon-menu.svg": "/IntroSectionFrontEndMentor/static/media/icon-menu.863803c904916606b7a1998b3c5736aa.svg",
     "static/media/icon-arrow-down.svg": "/IntroSectionFrontEndMentor/static/media/icon-arrow-down.bebf05132571af33611ede9cdfdbed0f.svg",
     "static/media/icon-arrow-up.svg": "/IntroSectionFrontEndMentor/static/media/icon-arrow-up.01861a1152dfab5f1070228d306352f4.svg",
-    "main.3217d544.css.map": "/IntroSectionFrontEndMentor/static/css/main.3217d544.css.map",
-    "main.db357f5f.js.map": "/IntroSectionFrontEndMentor/static/js/main.db357f5f.js.map",
+    "main.3907eb13.css.map": "/IntroSectionFrontEndMentor/static/css/main.3907eb13.css.map",
+    "main.c8cae655.js.map": "/IntroSectionFrontEndMentor/static/js/main.c8cae655.js.map",
     "787.28cb0dcd.chunk.js.map": "/IntroSectionFrontEndMentor/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3217d544.css",
-    "static/js/main.db357f5f.js"
+    "static/css/main.3907eb13.css",
+    "static/js/main.c8cae655.js"
   ]
 }
