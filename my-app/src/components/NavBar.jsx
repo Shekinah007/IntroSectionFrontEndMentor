@@ -25,6 +25,7 @@ const NavBar = ({ navBarToggle }) => {
         onClick={navBarToggle}
         className="closeMenuBtn"
         src={closeMenuImg}
+        alt="Close Icon"
       ></img>
       <div className="navFlex">
         <div className="navLinks">
@@ -36,17 +37,20 @@ const NavBar = ({ navBarToggle }) => {
             <div className="arrows"></div>
             <ul className="dropContent">
               <li>
-                <img src={todoImg}></img> <a href="#">Todo List</a>
+                <img src={todoImg} alt="Todo Icon"></img>
+                <a href="#">Todo List</a>
               </li>
               <li>
-                <img src={calendarIcon}></img>
+                <img src={calendarIcon} alt="Calendar Icon"></img>
                 <a href="#">Calendar</a>
               </li>
               <li>
-                <img src={remindersIcon}></img> <a href="#">Reminders</a>
+                <img src={remindersIcon} alt="Reminders Icon"></img>
+                <a href="#">Reminders</a>
               </li>
               <li>
-                <img src={planningIcon}></img> <a href="#">Planning</a>
+                <img src={planningIcon} alt="Planning Icon"></img>
+                <a href="#">Planning</a>
               </li>
             </ul>
           </span>
