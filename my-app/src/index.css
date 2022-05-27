@@ -32,8 +32,25 @@ a {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 4vh;
+  /* gap: 4vh; */
 }
+.flex > * {
+  margin-bottom: 2vh;
+}
+
+.flexB {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* gap: 4vh; */
+  width: 100vw;
+}
+.flexB > * {
+  margin-bottom: 4vh;
+}
+
+
 .overlay {
   display: block;
   background-color: rgba(0,0,0, 0.8);
@@ -61,28 +78,32 @@ a {
   width: 90vw;
 }
 
-.mainImage {
-  width: 100vw;
-  /* display: block;
-  -moz-box-sizing: border-box;
-  background-image: url("./imagesAndIcons/image-hero-mobile.png");
-  box-sizing: border-box;
-  height: 236px;
-  padding-left: 180px;
-  background-size: cover; */
+
+@supports not (aspect-ratio: 2/1.5) { 
+  
+  .mainImg {
+    display: inline-block;
+    width: 100vw;
+    height: 280px;
+    /* aspect-ratio: 2/1.5; */
+    background-image: url("./imagesAndIcons/image-hero-mobile.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 }
-.mainImg {
-  display: inline-block;
-  width: 100vw;
-  aspect-ratio: 2/1.5;
-  background-image: url("./imagesAndIcons/image-hero-mobile.png");
-  background-size: cover;
-  background-repeat: no-repeat;
+@supports (aspect-ratio: 2/1.5) { 
+  .mainImg {
+    display: inline-block;
+    width: 100vw;
+    /* height: 280px; */
+    aspect-ratio: 2/1.5;
+    background-image: url("./imagesAndIcons/image-hero-mobile.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 }
 
 h2 {
-  margin: 0;
-  width: 92vw;
   font-size: 10.3vw;
 }
 p {
@@ -122,8 +143,6 @@ p {
 .clientImg {
   width: 20vw;
 }
-
-
 .nav {
   position: fixed;
   right: 0;
@@ -136,8 +155,6 @@ p {
   padding-top: 8vh;
   padding-top: 15vmin;
   transition: 0.5s;
-  /* opacity: 1; */
-  
 }
 .navHidden{
   right: -100vw;
@@ -170,6 +187,8 @@ p {
 .navLinks * {
   color: rgb(141, 136, 136);
 }
+
+
 .navLinks *:hover {
   color: black;
 }
@@ -209,10 +228,8 @@ p {
 }
 .closeMenuBtn {
   position: absolute;
-  /* margin-left: 90%; */
   top: 20px;
   right: 20px;
-  /* margin-top: -500px; */
 }
 
 a:hover {
@@ -236,6 +253,19 @@ li {
   display: none;
   background-color: white;
 }
+.arrows {
+  display: inline-block;
+  margin-left: 4px;
+  width: 13px;
+  height: 9px;
+  background-image: url("./imagesAndIcons/icon-arrow-down.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.dropdown:hover .arrows {
+  background-image: url("./imagesAndIcons/icon-arrow-up.svg");
+  transition: 0.5s;
+}
 .dropdown:hover .dropContent
 {
   display: block;
@@ -244,14 +274,7 @@ li {
   display: block;
 }
 
-.flexB {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 4vh;
-  width: 100vw;
-}
+
 
 /* //////////////////////////////////////////////////////// */
 
@@ -287,27 +310,29 @@ li {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
-    gap: 20vh;
+    justify-content: space-between;
     width: 80vw;
     height: 70vh;
     margin-top: 10vh;
   }
 .flexB {
   flex-direction: column;
-  /* background-color: tomato; */
   justify-content: flex-end;
   gap: 10%;
   align-items: flex-start;
   height: 100%;
-  width:  50%;
+  width:  48%;
   text-align: left;
+}
+.flexB > * {
+  margin: 0;
 }
   .mainImg {
     display: inline-block;
     height: 100%;
-    width: 39%;
+    width: 34.3%;
     background-image: url("./imagesAndIcons/image-hero-desktop.png");
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
   }
   .navLinks {

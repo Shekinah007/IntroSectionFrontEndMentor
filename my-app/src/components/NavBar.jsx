@@ -32,7 +32,8 @@ const NavBar = ({ navBarToggle }) => {
             <a href="#" className="dropBtn" onClick={dropdownToggle1}>
               Features
             </a>
-            <img src={arrowDownImg}></img>
+            {/* <img src={arrowDownImg}></img> */}
+            <div className="arrows"></div>
             <ul className="dropContent">
               <li>
                 <img src={todoImg}></img> <a href="#">Todo List</a>
@@ -53,7 +54,8 @@ const NavBar = ({ navBarToggle }) => {
             <a href="#company" className="dropBtn" onClick={dropdownToggle2}>
               Company
             </a>
-            <img src={arrowDownImg}></img>
+            {/* <img src={arrowDownImg}></img> */}
+            <div className="arrows"></div>
             <ul className="dropContent">
               <li>
                 <a href="#">History</a>
