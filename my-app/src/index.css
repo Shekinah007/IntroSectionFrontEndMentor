@@ -16,6 +16,7 @@ code {
 }
 a {
   text-decoration: none;
+  color: rgb(141, 136, 136);
 }
 
 .App {
@@ -174,18 +175,20 @@ p {
   }
 }
 
+a {
+  color: rgb(141, 136, 136);
+}
 .navLinks  {
   display: flex;
   flex-direction: column;
   font-size: large;
   font-size: 4vmin;
   font-weight: 500;
-  color: rgb(141, 136, 136);
-  gap: 3vh;
+  /* gap: 3vh; */
   transition: 1s;
 }
-.navLinks * {
-  color: rgb(141, 136, 136);
+.navLinks > * {
+  margin-bottom: 3vh;
 }
 
 

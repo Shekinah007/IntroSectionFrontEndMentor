@@ -28,9 +28,14 @@ function App() {
     <div className="App">
       <div className="overlay"></div>
       <div className="navBar">
-        <img src={logoImg}></img>
+        <img src={logoImg} alt="Main Logo"></img>
         <NavBar navBarToggle={navBarToggle} />
-        <img className="navBtn" src={menuIconImg} onClick={navBarToggle}></img>
+        <img
+          className="navBtn"
+          alt="Menu Icon"
+          src={menuIconImg}
+          onClick={navBarToggle}
+        ></img>
 
         {/* <div className="nav navHidden">
           <div className="navLinks">
@@ -66,10 +71,18 @@ function App() {
             Learn More
           </a>
           <div className="clients">
-            <img className="clientImg" src={databizImg}></img>
-            <img className="clientImg" src={audiophileImg}></img>
-            <img className="clientImg" src={meetImg}></img>
-            <img className="clientImg" src={makerImg}></img>
+            <img
+              className="clientImg"
+              alt="Databiz logo"
+              src={databizImg}
+            ></img>
+            <img
+              className="clientImg"
+              alt="Audiophile logo"
+              src={audiophileImg}
+            ></img>
+            <img className="clientImg" alt="Meet logo" src={meetImg}></img>
+            <img className="clientImg" alt="Maker logo" src={makerImg}></img>
           </div>
         </div>
         {/* </div> */}
