@@ -7,7 +7,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
   margin: 0;
   padding: 0;
-  display: flex;
   background-color: white;
 }
 
@@ -20,24 +19,27 @@ a {
 }
 
 .App {
-  /* background-color: royalblue; */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* padding: 10px; */
   padding-top: 20px;
   background-color: white;
   gap: 4vh;
 }
-
+.flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4vh;
+}
 .overlay {
   display: block;
   background-color: rgba(0,0,0, 0.8);
   z-index: 1;
   position: fixed;
   top: 0;
-  /* left: 0; */
   bottom: 0;
   right: 0;
   height: 100vh;
@@ -56,17 +58,29 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* background-color: royalblue; */
   width: 90vw;
 }
 
 .mainImage {
   width: 100vw;
+  /* display: block;
+  -moz-box-sizing: border-box;
+  background-image: url("./imagesAndIcons/image-hero-mobile.png");
+  box-sizing: border-box;
+  height: 236px;
+  padding-left: 180px;
+  background-size: cover; */
+}
+.mainImg {
+  display: inline-block;
+  width: 100vw;
+  aspect-ratio: 2/1.5;
+  background-image: url("./imagesAndIcons/image-hero-mobile.png");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 h2 {
-  /* background-color: saddlebrown; */
-  /* padding: 0; */
   margin: 0;
   width: 92vw;
   font-size: 10.3vw;
@@ -81,18 +95,21 @@ p {
 }
 
 .linkLearnMore {
+  transition: 0.5s;
   font-size: x-large;
   color: whitesmoke;
   border: 2px solid black;
   background-color: black;
-  padding: 2vh;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 16px;
+  padding-right: 16px;
   font-weight: 600;
   border-radius: 20px;
 }
 
 .linkLearnMore:hover, .linkLearnMore:active {
   background-color: white;
-
 }
 
 .clients {
@@ -147,7 +164,7 @@ p {
   font-size: 4vmin;
   font-weight: 500;
   color: rgb(141, 136, 136);
-  gap: 1vh;
+  gap: 3vh;
   transition: 1s;
 }
 .navLinks * {
@@ -187,6 +204,9 @@ p {
   align-items: center;
   justify-content: center;
 }
+.register:hover {
+  border: 2px solid black;
+}
 .closeMenuBtn {
   position: absolute;
   /* margin-left: 90%; */
@@ -201,20 +221,20 @@ a:hover {
 
 ul {
   list-style: none;
-
 }
 
 li {
   margin-top: 10px;
+  margin-left: 0;
+  margin-right: 0;
   display: flex;
   align-items: center;
   gap: 10px;
-
 }
-
 
 .dropContent {
   display: none;
+  background-color: white;
 }
 .dropdown:hover .dropContent
 {
@@ -223,3 +243,157 @@ li {
 .dropHide {
   display: block;
 }
+
+.flexB {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4vh;
+  width: 100vw;
+}
+
+/* //////////////////////////////////////////////////////// */
+
+@media only screen and (min-width: 768px) {
+  .closeMenuBtn, .navBtn {
+    display: none;
+  }
+  .navBar {
+    position: fixed;
+    top: 5px;
+    display: flex;
+    width: 95vw;
+    justify-content: space-between;
+  }
+  .nav {
+    position: static;
+    min-height: 5vh;
+    display: flex;
+    width: 85%;
+  right: 0;
+  top: 0;
+  padding: 0vmin;
+  padding-top: 0vmin;
+  }
+  .main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:  100vw;
+    margin-top: 20vh;
+  }
+  .flex {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 20vh;
+    width: 80vw;
+    height: 70vh;
+    margin-top: 10vh;
+  }
+.flexB {
+  flex-direction: column;
+  /* background-color: tomato; */
+  justify-content: flex-end;
+  gap: 10%;
+  align-items: flex-start;
+  height: 100%;
+  width:  50%;
+  text-align: left;
+}
+  .mainImg {
+    display: inline-block;
+    height: 100%;
+    width: 39%;
+    background-image: url("./imagesAndIcons/image-hero-desktop.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .navLinks {
+    flex-direction: row;
+    align-items: center;
+    gap: 4%;
+    width: 100%;
+  }
+  .signIn a{
+    font-size: 15px;
+  }
+  .signIn {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5vh;
+    font-size: inherit;
+    font-size: 15px;
+  }
+  .navLinks a {
+    font-size: 15px;
+  }
+  .navFlex {
+    display: flex;
+    width: 100%;
+  }
+  .dropdown {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+  }
+  .dropContent {
+    position: fixed;
+    top: 6px;
+    border-radius: 0.5rem;
+    box-shadow: -1px 0px 31px -9px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -1px 0px 31px -9px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 0px 31px -9px rgba(0,0,0,0.75);
+  }
+  .signIn {
+    flex-direction: row;
+    margin-left: 0px;
+    margin-right: 0;
+  }
+  .signIn {
+    display: flex;
+    margin-top: 0;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5vh;
+    font-size: inherit;
+    font-size: 4vmin;
+  }
+  .clients {
+    width: 20vw;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .clientImg {
+    width: 5vw;
+  }
+  h2 {
+    margin: 0;
+    width: initial;
+    font-size: 480%;
+    line-height: 80%;
+  }
+  p {
+    text-align: left;
+    width: initial;
+    font-size: large;
+    font-weight: 500;
+    color: rgb(141, 136, 136);
+  }
+  ul {
+    padding: 20px;
+  }  
+  .register{
+    padding: 10px;
+    padding-left: 4vh;
+    padding-right: 4vh;
+  }
+}
+

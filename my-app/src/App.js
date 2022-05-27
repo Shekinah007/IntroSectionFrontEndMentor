@@ -27,10 +27,11 @@ function App() {
   return (
     <div className="App">
       <div className="overlay"></div>
-
       <div className="navBar">
         <img src={logoImg}></img>
+        <NavBar navBarToggle={navBarToggle} />
         <img className="navBtn" src={menuIconImg} onClick={navBarToggle}></img>
+
         {/* <div className="nav navHidden">
           <div className="navLinks">
             <span>
@@ -50,22 +51,28 @@ function App() {
           </div>
         </div> */}
         {/* {navBarOpen && <NavBar handleOpenNavBar={navBarToggle} />} */}
-        <NavBar navBarToggle={navBarToggle} />
       </div>
-      <img className="mainImage" src={mainImage}></img>
-      <h2 className="mainHeader"> Make remote work</h2>
-      <p>
-        Get your team in sync, no matter your location. Streamline processes,
-        create team rituals, and watch productivity soar.
-      </p>
-      <a className="linkLearnMore" href="#">
-        Learn More
-      </a>
-      <div className="clients">
-        <img className="clientImg" src={databizImg}></img>
-        <img className="clientImg" src={audiophileImg}></img>
-        <img className="clientImg" src={meetImg}></img>
-        <img className="clientImg" src={makerImg}></img>
+      {/* <img className="mainImage" src={mainImage}></img> */}
+      {/* <div className="main"> */}
+      <div className="flex">
+        <div className="mainImg"></div>
+        <div className="flexB">
+          <h2 className="mainHeader"> Make remote work</h2>
+          <p>
+            Get your team in sync, no matter your location. Streamline
+            processes, create team rituals, and watch productivity soar.
+          </p>
+          <a className="linkLearnMore" href="#">
+            Learn More
+          </a>
+          <div className="clients">
+            <img className="clientImg" src={databizImg}></img>
+            <img className="clientImg" src={audiophileImg}></img>
+            <img className="clientImg" src={meetImg}></img>
+            <img className="clientImg" src={makerImg}></img>
+          </div>
+        </div>
+        {/* </div> */}
       </div>
     </div>
   );
