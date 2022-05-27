@@ -104,7 +104,7 @@ a {
   }
 }
 
-h2 {
+h1 {
   font-size: 10.3vw;
 }
 p {
@@ -402,10 +402,10 @@ li {
   .clientImg {
     width: 5vw;
   }
-  h2 {
+  h1 {
     margin: 0;
     width: initial;
-    font-size: 480%;
+    font-size: 500%;
     line-height: 80%;
   }
   p {

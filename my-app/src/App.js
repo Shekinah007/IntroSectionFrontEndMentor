@@ -62,7 +62,7 @@ function App() {
       <div className="flex">
         <div className="mainImg"></div>
         <div className="flexB">
-          <h2 className="mainHeader"> Make remote work</h2>
+          <h1 className="mainHeader"> Make remote work</h1>
           <p>
             Get your team in sync, no matter your location. Streamline
             processes, create team rituals, and watch productivity soar.
