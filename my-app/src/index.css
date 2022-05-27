@@ -33,7 +33,6 @@ a {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* gap: 4vh; */
 }
 .flex > * {
   margin-bottom: 2vh;
@@ -44,14 +43,11 @@ a {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* gap: 4vh; */
   width: 100vw;
 }
 .flexB > * {
   margin-bottom: 4vh;
 }
-
-
 .overlay {
   display: block;
   background-color: rgba(0,0,0, 0.8);
@@ -60,7 +56,6 @@ a {
   top: 0;
   bottom: 0;
   right: 0;
-  height: 100vh;
   width: 0;
   transition: 0.2s;
   opacity: 0;
@@ -79,14 +74,12 @@ a {
   width: 90vw;
 }
 
-
-@supports not (aspect-ratio: 2/1.5) { 
+/* @supports not (aspect-ratio: 2/1.5) { 
   
   .mainImg {
     display: inline-block;
     width: 100vw;
     height: 280px;
-    /* aspect-ratio: 2/1.5; */
     background-image: url("./imagesAndIcons/image-hero-mobile.png");
     background-size: cover;
     background-repeat: no-repeat;
@@ -96,12 +89,20 @@ a {
   .mainImg {
     display: inline-block;
     width: 100vw;
-    /* height: 280px; */
     aspect-ratio: 2/1.5;
     background-image: url("./imagesAndIcons/image-hero-mobile.png");
     background-size: cover;
     background-repeat: no-repeat;
   }
+} */
+.imgContainer {
+  width: 100vw;
+}
+.mainImage {
+  content: url("./imagesAndIcons/image-hero-mobile.png");
+  /* width: 100vw; */
+  max-width: 100%;
+  max-height: 100%;
 }
 
 h1 {
@@ -162,7 +163,6 @@ p {
   overflow: hidden;
   transition: 0.5s;
 }
-
 
 @keyframes fadeInRight {
   0% {
@@ -277,8 +277,6 @@ li {
   display: block;
 }
 
-
-
 /* //////////////////////////////////////////////////////// */
 
 @media only screen and (min-width: 768px) {
@@ -297,10 +295,10 @@ li {
     min-height: 5vh;
     display: flex;
     width: 85%;
-  right: 0;
-  top: 0;
-  padding: 0vmin;
-  padding-top: 0vmin;
+    right: 0;
+    top: 0;
+    padding: 0vmin;
+    padding-top: 0vmin;
   }
   .main {
     display: flex;
@@ -324,19 +322,33 @@ li {
   gap: 10%;
   align-items: flex-start;
   height: 100%;
-  width:  48%;
+  width:  50%;
   text-align: left;
 }
 .flexB > * {
   margin: 0;
 }
   .mainImg {
-    display: inline-block;
+    /* display: inline-block; */
+    /* height: 100%; */
+    width: 0%;
+    /* background-image: url("./imagesAndIcons/image-hero-desktop.png"); */
+    /* background-color: red; */
+    /* background-size: cover; */
+    /* background-repeat: no-repeat; */
+  }
+
+  .imgContainer {
+    width: 45%;
+    display: flex;
+    justify-content: flex-end;
     height: 100%;
-    width: 34.3%;
-    background-image: url("./imagesAndIcons/image-hero-desktop.png");
-    background-size: cover;
-    background-repeat: no-repeat;
+  }
+   .imgContainer > img {
+    content: url("./imagesAndIcons/image-hero-desktop.png");
+    max-width: 100%;
+    object-fit: contain;
+    display: block;
   }
   .navLinks {
     flex-direction: row;

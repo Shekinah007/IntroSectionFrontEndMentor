@@ -37,31 +37,11 @@ function App() {
           src={menuIconImg}
           onClick={navBarToggle}
         ></img>
-
-        {/* <div className="nav navHidden">
-          <div className="navLinks">
-            <span>
-              Features <img src={arrowDownImg}></img>
-            </span>
-            <span>
-              Company <img src={arrowDownImg}></img>
-            </span>
-            <span>Careers</span>
-            <span>About</span>
-          </div>
-          <div className="signIn">
-            <a href="#">Login</a>
-            <a className="register" href="#">
-              Register
-            </a>
-          </div>
-        </div> */}
-        {/* {navBarOpen && <NavBar handleOpenNavBar={navBarToggle} />} */}
       </div>
-      {/* <img className="mainImage" src={mainImage}></img> */}
-      {/* <div className="main"> */}
       <div className="flex">
-        <div className="mainImg"></div>
+        <div className="imgContainer">
+          <img className="mainImage" alt="Main Image"></img>
+        </div>
         <div className="flexB">
           <h1 className="mainHeader"> Make remote work</h1>
           <p>
