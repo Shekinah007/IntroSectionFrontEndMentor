@@ -26,7 +26,7 @@ function App() {
       <div className="overlay"></div>
       <div className="navBar">
         <header>
-          <img role="banner" src={logoImg} alt="Main Logo"></img>
+          <img src={logoImg} alt="Main Logo"></img>
         </header>
 
         <NavBar navBarToggle={navBarToggle} />
@@ -40,7 +40,7 @@ function App() {
 
       <div className="flex">
         <div className="imgContainer">
-          <img className="mainImage" alt="Main Image"></img>
+          <img className="mainImage" src="" alt="Main Image"></img>
         </div>
         <div className="flexB">
           <h1 className="mainHeader"> Make remote work</h1>
