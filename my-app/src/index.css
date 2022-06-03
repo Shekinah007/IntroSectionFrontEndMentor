@@ -75,7 +75,6 @@ a {
 }
 
 /* @supports not (aspect-ratio: 2/1.5) { 
-  
   .mainImg {
     display: inline-block;
     width: 100vw;
@@ -100,7 +99,6 @@ a {
 }
 .mainImage {
   content: url("./imagesAndIcons/image-hero-mobile.png");
-  /* width: 100vw; */
   max-width: 100%;
   max-height: 100%;
 }
@@ -163,15 +161,17 @@ p {
   overflow: hidden;
   transition: 0.5s;
 }
-
+.dropContent {
+  animation: fadeInRight 0.2s;
+}
 @keyframes fadeInRight {
   0% {
     opacity: 0;
-    transform: translateX(100px)
+    transform: translateY(-20px)
   }
   100% {
     opacity: 1;
-    transform: translateX(0)
+    transform: translateY(0)
   }
 }
 
@@ -272,6 +272,7 @@ li {
 .dropdown:hover .dropContent
 {
   display: block;
+  
 }
 .dropHide {
   display: block;
@@ -295,18 +296,10 @@ li {
     min-height: 5vh;
     display: flex;
     width: 85%;
-    right: 0;
-    top: 0;
     padding: 0vmin;
     padding-top: 0vmin;
   }
-  .main {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width:  100vw;
-    margin-top: 20vh;
-  }
+ 
   .flex {
     display: flex;
     flex-direction: row-reverse;
@@ -369,6 +362,8 @@ li {
   }
   .navLinks a {
     font-size: 15px;
+    margin: 0;
+
   }
   .navFlex {
     display: flex;
@@ -379,15 +374,17 @@ li {
     align-items: center;
     flex-direction: row;
     gap: 10px;
+    margin: 0;
   }
   .dropContent {
     position: fixed;
-    top: 6px;
+    top: 5px;
     border-radius: 0.5rem;
     box-shadow: -1px 0px 31px -9px rgba(0,0,0,0.75);
     -webkit-box-shadow: -1px 0px 31px -9px rgba(0,0,0,0.75);
     -moz-box-shadow: -1px 0px 31px -9px rgba(0,0,0,0.75);
   }
+  
   .signIn {
     flex-direction: row;
     margin-left: 0px;
@@ -435,5 +432,14 @@ li {
     padding-left: 4vh;
     padding-right: 4vh;
   }
+}
+
+footer > * {
+  font-size: 0.8rem;
+  color: black; 
+}
+footer  a {
+  color: rgb(90, 122, 209);
+  text-decoration: underline;
 }
 

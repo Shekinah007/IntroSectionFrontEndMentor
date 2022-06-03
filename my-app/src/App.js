@@ -14,10 +14,7 @@ import closeMenuImg from "./imagesAndIcons/icon-close-menu.svg";
 import React, { useState } from "react";
 
 function App() {
-  let [navOpen, setNavOpen] = useState(true);
-  // let wrapper = React.createRef();
   const navBarToggle = () => {
-    // setNavOpen((prevState) => !prevState);
     let overlay = document.querySelector(".overlay");
     let navBar = document.querySelector(".nav");
     navBar.classList.toggle("navHidden");
@@ -25,10 +22,12 @@ function App() {
   };
 
   return (
-    <div className="App">
+    <main className="App">
       <div className="overlay"></div>
       <div className="navBar">
-        <img role="banner" src={logoImg} alt="Main Logo"></img>
+        <header>
+          <img role="banner" src={logoImg} alt="Main Logo"></img>
+        </header>
 
         <NavBar navBarToggle={navBarToggle} />
         <img
@@ -38,6 +37,7 @@ function App() {
           onClick={navBarToggle}
         ></img>
       </div>
+
       <div className="flex">
         <div className="imgContainer">
           <img className="mainImage" alt="Main Image"></img>
@@ -51,6 +51,7 @@ function App() {
           <a className="linkLearnMore" href="#">
             Learn More
           </a>
+
           <div className="clients">
             <img
               className="clientImg"
@@ -66,9 +67,14 @@ function App() {
             <img className="clientImg" alt="Maker logo" src={makerImg}></img>
           </div>
         </div>
-        {/* </div> */}
       </div>
-    </div>
+      <footer>
+        <p>
+          Challenge by <a href="#">Frontend Mentor.</a> Coded by{" "}
+          <a href="#">Shekinah Shalom-Hope</a>
+        </p>
+      </footer>
+    </main>
   );
 }
 

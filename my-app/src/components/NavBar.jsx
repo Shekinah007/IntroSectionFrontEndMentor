@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import arrowDownImg from "../imagesAndIcons/icon-arrow-down.svg";
 import arrowUpImg from "../imagesAndIcons/icon-arrow-up.svg";
 import closeMenuImg from "../imagesAndIcons/icon-close-menu.svg";
@@ -13,6 +13,8 @@ const NavBar = ({ navBarToggle }) => {
     // dropContent.classList.toggle("dropHide");
   };
 
+  let [isOpen1, setIsOpen1] = useState(true);
+  let [isOpen2, setIsOpen2] = useState(true);
   const dropdownToggle2 = () => {
     // let dropContent = document.querySelectorAll(".dropContent")[1];
     // console.log(dropContent);
@@ -29,49 +31,65 @@ const NavBar = ({ navBarToggle }) => {
       ></img>
       <div className="navFlex">
         <div className="navLinks">
-          <span className="dropdown">
-            <a href="#" className="dropBtn" onClick={dropdownToggle1}>
+          <div className="dropdown">
+            <a
+              href="#"
+              className="dropBtn"
+              onClick={() => setIsOpen1((prevState) => !prevState)}
+            >
               Features
             </a>
-            {/* <img src={arrowDownImg}></img> */}
+
             <div className="arrows"></div>
-            <ul className="dropContent">
-              <li>
-                <img src={todoImg} alt="Todo Icon"></img>
-                <a href="#">Todo List</a>
-              </li>
-              <li>
-                <img src={calendarIcon} alt="Calendar Icon"></img>
-                <a href="#">Calendar</a>
-              </li>
-              <li>
-                <img src={remindersIcon} alt="Reminders Icon"></img>
-                <a href="#">Reminders</a>
-              </li>
-              <li>
-                <img src={planningIcon} alt="Planning Icon"></img>
-                <a href="#">Planning</a>
-              </li>
-            </ul>
-          </span>
-          <span className="dropdown">
-            <a href="#company" className="dropBtn" onClick={dropdownToggle2}>
+            {/* {isOpen1 ? (
+              <img src={arrowUpImg}></img>
+            ) : (
+              <img src={arrowDownImg}></img>
+            )} */}
+            {isOpen1 && (
+              <ul className="dropContent">
+                <li>
+                  <img src={todoImg} alt="Todo Icon"></img>
+                  <a href="#">Todo List</a>
+                </li>
+                <li>
+                  <img src={calendarIcon} alt="Calendar Icon"></img>
+                  <a href="#">Calendar</a>
+                </li>
+                <li>
+                  <img src={remindersIcon} alt="Reminders Icon"></img>
+                  <a href="#">Reminders</a>
+                </li>
+                <li>
+                  <img src={planningIcon} alt="Planning Icon"></img>
+                  <a href="#">Planning</a>
+                </li>
+              </ul>
+            )}
+          </div>
+          <div className="dropdown">
+            <a
+              href="#company"
+              className="dropBtn"
+              onClick={() => setIsOpen2((prevState) => !prevState)}
+            >
               Company
             </a>
-            {/* <img src={arrowDownImg}></img> */}
             <div className="arrows"></div>
-            <ul className="dropContent">
-              <li>
-                <a href="#">History</a>
-              </li>
-              <li>
-                <a href="#">Our Team</a>
-              </li>
-              <li>
-                <a href="#">Blog</a>
-              </li>
-            </ul>
-          </span>
+            {isOpen2 && (
+              <ul className="dropContent">
+                <li>
+                  <a href="#">History</a>
+                </li>
+                <li>
+                  <a href="#">Our Team</a>
+                </li>
+                <li>
+                  <a href="#">Blog</a>
+                </li>
+              </ul>
+            )}
+          </div>
           <a href="#">Careers</a>
           <a href="#">About</a>
         </div>
