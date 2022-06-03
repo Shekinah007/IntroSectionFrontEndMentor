@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/IntroSectionFrontEndMentor/static/css/main.79cd3246.css",
+    "main.css": "/IntroSectionFrontEndMentor/static/css/main.f86453ae.css",
     "main.js": "/IntroSectionFrontEndMentor/static/js/main.6f3c339f.js",
     "static/js/787.28cb0dcd.chunk.js": "/IntroSectionFrontEndMentor/static/js/787.28cb0dcd.chunk.js",
     "static/media/image-hero-desktop.png": "/IntroSectionFrontEndMentor/static/media/image-hero-desktop.50cc22fddeb0c072b414.png",
@@ -19,12 +19,12 @@
     "static/media/icon-menu.svg": "/IntroSectionFrontEndMentor/static/media/icon-menu.863803c904916606b7a1998b3c5736aa.svg",
     "static/media/icon-arrow-down.svg": "/IntroSectionFrontEndMentor/static/media/icon-arrow-down.bebf05132571af33611ede9cdfdbed0f.svg",
     "static/media/icon-arrow-up.svg": "/IntroSectionFrontEndMentor/static/media/icon-arrow-up.01861a1152dfab5f1070228d306352f4.svg",
-    "main.79cd3246.css.map": "/IntroSectionFrontEndMentor/static/css/main.79cd3246.css.map",
+    "main.f86453ae.css.map": "/IntroSectionFrontEndMentor/static/css/main.f86453ae.css.map",
     "main.6f3c339f.js.map": "/IntroSectionFrontEndMentor/static/js/main.6f3c339f.js.map",
     "787.28cb0dcd.chunk.js.map": "/IntroSectionFrontEndMentor/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.79cd3246.css",
+    "static/css/main.f86453ae.css",
     "static/js/main.6f3c339f.js"
   ]
 }
