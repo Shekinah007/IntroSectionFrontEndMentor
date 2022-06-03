@@ -286,7 +286,7 @@ li {
   }
   .navBar {
     position: fixed;
-    top: 5px;
+    top: 10px;
     display: flex;
     width: 95vw;
     justify-content: space-between;

@@ -40,7 +40,7 @@ function App() {
 
       <div className="flex">
         <div className="imgContainer">
-          <img className="mainImage" src="data" alt="Main Image"></img>
+          <img className="mainImage" src={mainImage} alt="Main Image"></img>
         </div>
         <div className="flexB">
           <h1 className="mainHeader"> Make remote work</h1>
